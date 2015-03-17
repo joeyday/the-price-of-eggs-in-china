@@ -74,11 +74,11 @@ foreach ($html2->find('tr') as $tr) {
 <?php echo "&#165;" . $egg_price . "/kg"; ?>
 </p>
 <p class="egg_delta">
-<?php echo $egg_delta; ?>% <span class="meta">since last Friday</span>
+<?php echo $egg_delta; ?>% <span class="meta">since previous business day</span>
 </p>
 </div>
 <div class="footer">
-<?php echo 'Wholesale commodity price data retrieved from the<br /><a href="http://english.agri.gov.cn/service/pi/' . substr($latest_a->href, 2) . '">Ministry of Agriculture of the People’s Republic of China</a><br />on ' . strftime('%B %d, %Y'); ?>
+<?php echo 'Wholesale commodity price data from the<br /><a href="http://english.agri.gov.cn/service/pi/' . substr($latest_a->href, 2) . '">Ministry of Agriculture of the People’s Republic of China</a><br />retrieved on ' . strftime('%B %d, %Y'); ?>
 </div>
 </body>
 </html>
